@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+body{
+  background-color:#e5eaf5
+}
+.display-4{
+  color: #BE29EC;
+  font-weight: 400;
+  
+}
+#card-info-course p{
+  color: yellow;
+}
+#card-info-course p.h4{
+  padding-top: 15px;
+  color: white;
+}
+#card-info-course{
+  background-color: black;
+/* background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%); */
+
+}
+
+.navbar {
+  min-height: 60px;
+  background-color: #002448;
+}
+html{
+  overflow-x: hidden;
+}
+.carousel  {
+  margin:auto;
+}
+
+
+.navbar-nav{
+  margin-right: 50px;
+}
+.navbar-nav li{
+  margin-left: 20px;
+}
+
+.navbar-nav li a{
+  color: #E5B964;
+
+}
+.navbar-nav li a:hover{
+  color: white;
+
+}
+.nopadding-top {
+  padding-top: 0 !important;
+ 
+}
+
+.no-scroll::-webkit-scrollbar{
+  display: none;
+}
+
+#about-us{
+  position: relative;
+  padding: 0;
+}
+
+#about-us-bg{
+  background-image: url(./img/about.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.3;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
+#color-overlay-about-us{
+  background: #108dc7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #38e9ef, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #38e9ef, #108dc7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  position: absolute;
+  opacity: 0.7;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+#faculty-bg{
+  background-image: url(./img/faculty-bg.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.7;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+#contact-bg{
+  background-image: url(./img/contact-us.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-position: bottom;
+  opacity: 0.6;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nopadding{
+  padding: 0;
+  margin: 0;
+}
+
+#card-course{
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#stats-option{
+  width: 100px;
+  height: 100px;
+  
+}
+
+#Partner-Organizations{
+  position: relative;
+  padding: 0;
+}
+
+#partner-org-bg{
+
+background-color: aqua;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  opacity:0.3;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+p{
+  font-family: sans-serif;
+  font-weight: 00;
+}
+
+
+.social a{
+  font-size: 3em;
+  padding-left: 1em;
+  color: lightgray;
+}
+.social a:hover{
+  color: white;
+}
+footer{
+  margin-top: -24px;
+  background-color: #002448;
+  color: #E5B964;
+}
+
+footer a{
+  color: #E5B964;
+
+}
+hr.light{
+width: 50%;
+  background-color: white;
+}
+
+#courses-card:hover{
+  opacity: 0.2;
+ 
+
+}
+#courses-card:hover #course-card-button{
+  display: inline-block;
+  opacity: 1;
+}
+
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+    height: 100%;;  
+
+}
+
+
+
+
+
+/*---Media Queries --*/
+
+
+@media screen and (min-width: 992px){
+
+  #card-info-course p.h4{
+    padding: 15px;
+    color: white;
+  }
+  #card-course{
+    height:25vh;
+    width:100px;
+    
+  }
+  #card-course-img {
+    width: 100%;
+    height: 100%;
+    /* changes */
+    object-fit: cover;
+}
+
+#about-us-img{
+  width: 700px;
+  margin-left: 0px;
+}
+#about-us-info{
+  margin-left: 50px;
+}
+
+#stats-option{
+width: 150px;
+height: 150px;
+
+}
+
+#stats-box{
+padding-top: 50px;
+padding-left: 50px;
+margin-left: 50px;
+border-left:1px solid lightgrey;
+}
+
+
+
+#courses-card{
+margin-left: 25px;
+margin-bottom: 25px;
+}
+#card-info-course{
+font-size: 0.2vw;
+}
+#card-course{
+margin-left: 20px;
+}
+#card-faculty{
+  width: 18rem;
+}
+  
+}
+
+
+
+  
+
+
+  
+  @media (min-width: 500px) {
+    #card-info-course{
+      font-size: 0.7vw;
+    }
+    #card-course{
+      margin-left: 20px;
+    }
+    
+  }
+@media (min-width: 768px) {
+#card-info-course{
+    font-size: 1.2vw;
+  }
+  #card-course{
+    margin-left: 20px;
+  }
+  
+}
+@media (min-width: 868px) {
+  #card-info-course{
+    font-size: 0.9vw;
+  }
+  #card-course{
+    margin-left: 20px;
+  }
+  
+}
+
+@media (max-width: 576px) {
+.social a{
+    font-size: 2em;
+    padding-left: 0.6em;
+ 
+}
+
+#card-faculty{
+  width: 18rem;
+}
+
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Fixed Background Image --*/
+figure {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  margin: 0!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#fixed {
+  background-image: url('img/mac.png');
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/}

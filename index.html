@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html style="overflow-x:hidden ;" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+	<title>IPRC</title>
+	<link rel="shortcut icon" href="/Bootstrap 4 Site Files/img/mac.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">	
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+<style>
+	#card-course{
+	
+  box-shadow: 5px 10px 8px #888888;
+  border-radius: 5%;
+	}
+	#card-course-img{
+		border-radius: 5%;
+	}
+</style>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar sticky-top navbar-expand-lg " >
+	<!-- Brand -->
+	<a class="navbar-brand" href="#"><img height="35px" width="35px" src="/Bootstrap 4 Site Files/img/mac.png" alt=""></a>
+  
+	<!-- Toggler/collapsibe Button -->
+	<button class="navbar-toggler" style="color: yellow;" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	  <span class="navbar-toggler-icon" >
+		<i class="fas fa-bars" style="color: #E5B964; font-size:28px;"></i>
+	</span>
+	</button>
+  
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse"  id="collapsibleNavbar">
+	  <ul class="navbar-nav ml-auto">
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Home</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">About Us</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="#">Courses</a>
+		</li>
+		<li class="nav-item">
+			<a class="nav-link" href="#">Partner Organization</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Advisors</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Faculty</a>
+		  </li>
+	  </ul>
+	</div>
+  </nav>
+
+  <div id="home">
+	  <img class="img-fluid" style="object-fit:cover;" width="100%" height="auto" src="img/study.jpg" alt="Network Error">
+  </div>
+
+  <div id="about-us"   class="container-fluid text-center">
+	  <div id="about-us-bg"></div>
+	  <div id="color-overlay-about-us"></div>
+	  <div class="row welcome text-center" >
+		  <div class="col-12">
+			  <h1 class="display-4 pt-4 " >About Us</h1>
+		  </div>
+		  
+		  <div  class="col-lg-6 padding align-self-center  nopadding-top">
+			  <p id="about-us-info" style="color: white;" class="lead px-5">
+				Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+				
+               </p></div>
+				
+				<div id="about-us-img" class="col-lg-5 mx-auto py-4 pb-5 ">
+					<img id="about-us-img" src="./img/desk.png" class="img-fluid" alt="">
+				</div>
+				
+		  </div>
+		  
+	  </div>
+	  
+
+
+  <div class="container-fluid text-center " id="courses">
+	
+	<div id="courses-trigger">
+		<h1 class="display-4 text-center py-3" style="color: teal;">Courses</h1>
+	</div>
+
+
+		<div id="cards-container" class="pb-5" >
+			<div class="row welcome text-center justify-content-center" >
+				<div id="card-course" class="card card-hover-1 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-1" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-1">Card title</h5>
+					  <button class="explore explore-1 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-1">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				<div id="card-course" class="card card-hover-2 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-2" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-2">Card title</h5>
+					  <button class="explore explore-2 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-2">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				<div id="card-course" class="card card-hover-3 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-3" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-3">Card title</h5>
+					  <button class="explore explore-3 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-3">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row welcome text-center justify-content-center" >
+				<div id="card-course" class="card card-hover-4 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-4" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-4">Card title</h5>
+					  <button class="explore explore-4 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-4">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				<div id="card-course" class="card card-hover-5 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-5" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-5">Card title</h5>
+					  <button class="explore explore-5 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-5">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				<div id="card-course" class="card card-hover-6 col-md-3 mx-3 mb-3" style="min-width:25vw;padding: 0%;height: 25vh;">
+					<img id="card-course-img" class="card-img-top card-img-top-6" height="100%" src="./img/background.png" alt="Card image cap">
+					<div class="card-body text-center">
+					  <h5 class="card-title card-title-6">Card title</h5>
+					  <button class="explore explore-6 btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i>&nbsp;Explore</button>
+					  <div id="card-info-course" class="container-fluid card-info card-info-6">
+						<p class="welcome h4">About the Course</p>
+						<p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+						</p><p><a href="#" class="btn btn-primary">Go somewhere</a></p>
+					  </div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	
+</div>
+		
+<div class="container-fluid text-center"  id="Partner-Organizations">
+	<div id="partner-org-bg"></div>
+	<div id="partner" class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4 pt-4" style="color: #104B95;">Partner Organizations</h1>
+		
+		</div>
+		<div class="col-12">
+			<div class="swiper-container partner-swiper-container ">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide" >
+					<div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+						<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+						<div class="card-body nopadding-top"  >
+						  <p class="card-text py-3 py-3">Faculty Name</p>
+						</div>
+						</div>
+				  </div>
+				  <div class="swiper-slide"> <div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+					<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+					<div class="card-body nopadding-top"  >
+					  <p class="card-text py-3">Faculty Name</p>
+					</div>
+					</div></div>
+				  <div class="swiper-slide"> <div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+					<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+					<div class="card-body nopadding-top"  >
+					  <p class="card-text py-3">Faculty Name</p>
+					</div>
+					</div></div>
+				  <div class="swiper-slide"> <div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+					<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+					<div class="card-body nopadding-top"  >
+					  <p class="card-text py-3">Faculty Name</p>
+					</div>
+					</div></div>
+				  <div class="swiper-slide"> <div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+					<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+					<div class="card-body nopadding-top"  >
+					  <p class="card-text py-3">Faculty Name</p>
+					</div>
+					</div></div>
+				  <div class="swiper-slide"> <div class="card" style="width: 12rem; background-color: transparent; border: none; margin-left: 95px;">
+					<img src="./img/team1.png" class="card-img-top" style="border-radius: 50%; width: 180px ;height: 180px;" alt="...">
+					<div class="card-body nopadding-top"  >
+					  <p class="card-text py-3">Faculty Name</p>
+					</div>
+					</div></div>
+				  
+				</div>
+				<!-- Add Pagination -->
+				
+			  </div>
+		</div>
+
+	</div>
+</div>		
+
+<div class="container-fluid text-center padding" style="position: relative; padding: 0;" id="faculty">
+	<div id="faculty-bg"></div>
+	<div id="color-overlay-faculty"></div>
+	<div class="row padding text-center" >
+		<div class="col-lg-12 align-self-center " style="border-right:1px solid lightgray ;">
+			<h1 class="display-4 pt-4">Our Faculty</h1>
+			<p class="lead px-5 pt-2">
+				Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+				
+                Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a first-century BCE text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.
+			</p>
+			<div class="col-lg-12 align-self-center">
+				<div class="swiper-container faculty-swiper-container">
+					<div class="swiper-wrapper">
+					  <div id="swiper-slide" class="swiper-slide" >
+						<div  id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide" >
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide">
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide" >
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+						  
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide">
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide">
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					  <div id="swiper-slide" class="swiper-slide">
+						<div id="card-faculty" class="card" >
+							<img class="card-img-top" src="./img/team2.png" alt="Card image cap">
+							<div class="card-body">
+							  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							</div>
+						  </div>
+					  </div>
+					</div>
+					<!-- Add Pagination -->
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				
+				  </div>
+			</div>
+			  </div>
+		</div>
+
+		
+	 
+	
+	
+
+</div>
+</div>
+
+
+<div class="container-fluid text-center padding" style="padding: 0; position: relative;" id="Contact Us">
+	<div id="contact-bg"></div>
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4 py-4" style="color: #002448;">Contact Us</h1>
+		
+		</div>
+		
+        <div class="text-center pb-4 col-sm-12 col-md-12 col-lg-12">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482634.6918557301!2d72.6016685791989!3d19.082040096576943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1593340115309!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+            
+                
+              
+		  
+	
+
+	</div>
+		<hr class="my-4">
+
+		
+</div>
+<footer>
+	<div class="container-fluid padding p-4">
+		<div class="row text-center">
+			<div class="col-md-4">
+				<h4>IPRC</h4>
+				<hr class="light" >
+				<p>5555-5555</p>
+				<p>Address</p>
+			</div>
+			<div class="col-md-4">
+				<h4>Links</h4>
+				<hr class="light">
+				<a href=""><p>Home</p></a>
+				<a href=""><p>About Us</p></a>
+				<a href=""><p>Advisors</p></a>
+				<a href=""><p>Faculty</p></a>
+			</div>
+			<div class="col-md-4">
+
+				<h4>Links</h4>
+				<hr class="light">
+				<a href=""><p>Courses</p></a>
+				<a href=""><p>Partners</p></a>
+				<a href=""><p>Contact Us</p></a>
+		</div>
+		<div id="icons" class="col-12 social padding" style="margin-top: 20px;">
+			<a href=""><i class="fab fa-facebook"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href=""><i class="fab fa-google-plus-g"></i></a>
+			<a href=""><i class="fab fa-instagram"></i></a>
+			<a href=""><i class="fab fa-youtube"></i></a>
+	  </div>
+		
+		<div class="col-12 py-3">
+			<h6 style="display: inline-block; margin-right: 5px;">Copyright</h6>
+			<a href="">www.IPRC.com</a>
+			</div>
+		
+		
+		</div>
+		</div>
+	</div>
+
+</footer>
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="./swiper.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+<script>
+	gsap.timeline({
+		scrollTrigger:{
+			trigger:'#about-us',
+			start:'top center',
+			end:'center center'
+		}
+	}).from('#about-us-info',{x:-1200,ease:Power2.easeOut,duration:2})
+	// .from('#about-us-img',{x:-400,ease:Power2.easeOut,duration:2},'-=1.5');
+	gsap.timeline({
+		scrollTrigger:{
+			trigger:'#courses-trigger',
+			start:'top center',
+			end:'bottom center'
+		}
+		
+	}).from('#courses',{x:200,ease:Power2.easeOut,duration:1})
+	gsap.timeline({
+		scrollTrigger:{
+			trigger:'#partner-trigger',
+			start:'top center',
+			end:'bottom center'
+		}
+		
+	}).from('#partner',{x:-400,ease:Power2.easeOut,duration:2})
+	gsap.timeline({
+		scrollTrigger:{
+			trigger:'#advisor-trigger',
+			start:'top center',
+			end:'bottom center'
+		}
+		
+	}).from('#advisor',{x:200,ease:Power2.easeOut,duration:1})
+	gsap.timeline({
+		scrollTrigger:{
+			trigger:'#icons',
+			start:'top center',
+			end:'bottom center'
+		}
+		
+	})
+	function checkHover(){
+		if (window.matchMedia("(max-width: 750px)").matches) {
+		$('iframe').css('width','300px');
+	}else{
+		$('iframe').css('width','600px');
+	}
+	}
+	$(document).ready(function() {
+       checkHover();
+
+        setInterval(checkHover, 1000);
+
+      });
+	  $(' .card-info').css('position','absolute');
+	$(' .card-info').css('top','0%');
+	$(' .card-info').css('left','0%');
+	$(' .card-info').css('height','100%');
+	$(' .card-info').css('width','100%');
+
+	// $(' .card-info').css('background-color','lightgrey');
+	$(' .card-info').css('z-index','5');
+	// $(' .card-info').css('font-size','1.2em');
+
+	$(' .card-info').css('visibility','hidden');
+	$(' .card-title').css('position','absolute');
+	$(' .card-title').css('z-index','1');
+	$(' .card-title').css('bottom','40%');
+	$(' .card-title').css('left','20%');
+	$(' .card-title').css('color','white');
+	$(' .card').css('overflow','hidden');
+	$(' .explore').css('position','absolute');
+	$(' .explore').css('z-index','2');
+	$(' .explore').css('bottom','40%');
+	$(' .explore').css('left','20%');
+
+	$(' .explore').css('visibility','hidden');
+	$(' .btn').css('background-color','transparent');
+	$(' .btn').css('border','none');
+
+	
+	// $(' .card-title').css('left','25%');
+	
+	
+
+
+
+
+	$(' .card-hover-2').mouseenter(function(){
+		$(' .card-img-top-2').css('opacity','0.4');
+		$(' .card-title-2').css('visibility','hidden');
+		$(' .explore-2').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-2',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-2',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-2').mouseleave(function(){
+		$(' .card-img-top-2').css('opacity','1');
+		$(' .card-title-2').css('visibility','visible');
+		$(' .explore-2').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-2',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	
+	$(' .card-hover-1').mouseenter(function(){
+		$(' .card-img-top-1').css('opacity','0.4');
+		$(' .card-title-1').css('visibility','hidden');
+		$(' .explore-1').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-1',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-1',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-1').mouseleave(function(){
+		$(' .card-img-top-1').css('opacity','1');
+		$(' .card-title-1').css('visibility','visible');
+		$(' .explore-1').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-1',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	$(' .card-hover-3').mouseenter(function(){
+		$(' .card-img-top-3').css('opacity','0.4');
+		$(' .card-title-3').css('visibility','hidden');
+		$(' .explore-3').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-3',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-3',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-3').mouseleave(function(){
+		$(' .card-img-top-3').css('opacity','1');
+		$(' .card-title-3').css('visibility','visible');
+		$(' .explore-3').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-3',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	$(' .card-hover-4').mouseenter(function(){
+		$(' .card-img-top-4').css('opacity','0.4');
+		$(' .card-title-4').css('visibility','hidden');
+		$(' .explore-4').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-4',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-4',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-4').mouseleave(function(){
+		$(' .card-img-top-4').css('opacity','1');
+		$(' .card-title-4').css('visibility','visible');
+		$(' .explore-4').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-4',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	$(' .card-hover-5').mouseenter(function(){
+		$(' .card-img-top-5').css('opacity','0.4');
+		$(' .card-title-5').css('visibility','hidden');
+		$(' .explore-5').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-5',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-5',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-5').mouseleave(function(){
+		$(' .card-img-top-5').css('opacity','1');
+		$(' .card-title-5').css('visibility','visible');
+		$(' .explore-5').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-5',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	$(' .card-hover-6').mouseenter(function(){
+		$(' .card-img-top-6').css('opacity','0.4');
+		$(' .card-title-6').css('visibility','hidden');
+		$(' .explore-6').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-6',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		
+
+		// $(' .card-info-1').css('visibility','visible');
+		 gsap.timeline().fromTo(' .card-img-top-6',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+
+	})
+	$(' .card-hover-6').mouseleave(function(){
+		$(' .card-img-top-6').css('opacity','1');
+		$(' .card-title-6').css('visibility','visible');
+		$(' .explore-6').css('visibility','hidden');
+		gsap.timeline().fromTo(' .card-img-top-6',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+		
+
+
+	})
+	
+	
+</script>
+
+
+
+
+
+
+ 
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
