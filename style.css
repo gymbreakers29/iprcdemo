@@ -279,7 +279,9 @@ margin-left: 20px;
     #card-course{
       margin-left: 20px;
     }
-    
+    #statistics{
+      height: auto;
+    }
   }
 @media (min-width: 768px) {
 #card-info-course{
@@ -287,6 +289,9 @@ margin-left: 20px;
   }
   #card-course{
     margin-left: 20px;
+  }
+  #statistics{
+    height: 300px;
   }
   
 }
@@ -296,6 +301,9 @@ margin-left: 20px;
   }
   #card-course{
     margin-left: 20px;
+  }
+  #statistics{
+    height: 300px;
   }
   
 }
@@ -310,6 +318,7 @@ margin-left: 20px;
 #card-faculty{
   width: 18rem;
 }
+
 
 
 
@@ -387,8 +396,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
   /* border: 2px solid rgba(187, 180, 180, 0.089); */
   box-shadow: 5px 10px 18px 10px #363333;
   border-radius: 5%;
-  background-size: contain;
-  background-image: url(https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png);
+  /* background-size: contain; */
+  /* background-image: url(https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png); */
 
   /* Center slide text vertically */
   display: -webkit-box;

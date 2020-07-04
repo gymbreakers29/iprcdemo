@@ -25,6 +25,24 @@
 	#card-course-img{
 		border-radius: 5%;
 	}
+	 #parallax{
+	 	position:absolute; 
+	 	background-image: url(img/background.png);
+	 	background-repeat: no-repeat;
+	 	background-size: cover;
+	 	background-attachment: fixed;
+	 	z-index: -2;
+	 	height: 100%;
+	 	width: 100%;
+	 	opacity: 0.7;
+	 }
+	 #parallax .overlay{
+		 height: 100%;
+		 width: 100%;
+		 background-color: aqua;
+		 opacity: 0.3;
+	 }
+	
 </style>
 <body>
 
@@ -191,16 +209,30 @@
 	<div class="container col-lg-12 mt-4" style="height: 200px; width: 100%;">
 		<div class="swiper-container-workshop">
 			<div class="swiper-wrapper">
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
-			  <div class="swiper-slide workshop"></div>
+				<div class="swiper-slide workshop workshop-1" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-1" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-1 btn btn-primary position-absolute text-dark" ><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+				</div>
+				<div class="swiper-slide workshop workshop-2" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-2" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-2 btn btn-primary position-absolute text-dark"><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+				</div>
+				<div class="swiper-slide workshop workshop-3" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-3" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-3 btn btn-primary position-absolute text-dark"><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+				</div>
+				<div class="swiper-slide workshop workshop-4" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-4" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-4 btn btn-primary position-absolute text-dark"><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+				</div>
+				<div class="swiper-slide workshop workshop-5" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-5" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-5 btn btn-primary position-absolute text-dark"><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+				</div>
+				<div class="swiper-slide workshop workshop-6" style="background-image: none;">
+					<img style="object-fit: contain;" class=" workshop-img-6" height="100%" width="100%" src="https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png" alt="">
+					<button class="explore-workshop-btn explore-workshop-btn-6 btn btn-primary position-absolute text-dark"><i style="font-size: 1.2rem;" class="fa fa-search" aria-hidden="true"></i>&nbsp;<b style="font-size: 1.2rem;">Explore</b></button>
+			</div>
 			</div>
 			
 			<!-- Add Arrows -->
@@ -213,31 +245,36 @@
 </div>
 
 
-<div class="container-fluid row welcome text-center mt-3 mb-0 p-5 mx-auto" style="background-color: aqua;">
+<div id="statistics" class="container-fluid row welcome text-center m-0 p-0 mb-0 align-items-center" style="position: relative;" >
 	
-	<div class="container col-lg-3 col-md-3">
+	
+	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-users" style="font-size: 3.2rem;color:white;"></i>
 		<p class="num h4" style="color: navy;">1258</p>
 		<p class="h5">Students Enrolled</p>
+		
 
 	</div>
-	<div class="container col-lg-3 col-md-3">
+	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-trophy" style="font-size:3.2rem;color: white;"></i>
 		<p class="num h4" style="color: navy;">120</p>
 		<p class="h5">Awards</p>
 
 	</div>
-	<div class="container col-lg-3 col-md-3">
+	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-user" style="font-size: 3.2rem;color:white;"></i>
 		<p class="num h4" style="color: navy;">50</p>
 		<p class="h5">Teachers</p>
 	
 
 	</div>
-	<div class="container col-lg-3 col-md-3">
+	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-handshake" style="font-size: 3.2rem;color: white;"></i>
 		<p class="num h4" style="color: navy;">12</p>
 		<p class="h5">Partner Organisations</p>
+	</div>
+	<div id="parallax" class="container-fluid p-0">
+		<div class="overlay container-fluid"></div>
 	</div>
 </div>
 
@@ -474,7 +511,7 @@
 			end:'center center'
 		}
 	}).from('#about-us-info',{x:-1200,ease:Power2.easeOut,duration:2})
-	// .from('#about-us-img',{x:-400,ease:Power2.easeOut,duration:2},'-=1.5');
+	
 	gsap.timeline({
 		scrollTrigger:{
 			trigger:'#courses-trigger',
@@ -520,16 +557,12 @@
         setInterval(checkHover, 1000);
 
       });
-	  $(' .card-info').css('position','absolute');
+	$(' .card-info').css('position','absolute');
 	$(' .card-info').css('top','0%');
 	$(' .card-info').css('left','0%');
 	$(' .card-info').css('height','100%');
 	$(' .card-info').css('width','100%');
-
-	// $(' .card-info').css('background-color','lightgrey');
 	$(' .card-info').css('z-index','5');
-	// $(' .card-info').css('font-size','1.2em');
-
 	$(' .card-info').css('visibility','hidden');
 	$(' .card-title').css('position','absolute');
 	$(' .card-title').css('z-index','1');
@@ -541,28 +574,96 @@
 	$(' .explore').css('z-index','2');
 	$(' .explore').css('bottom','40%');
 	$(' .explore').css('left','20%');
-
 	$(' .explore').css('visibility','hidden');
 	$(' .btn').css('background-color','transparent');
 	$(' .btn').css('border','none');
+	 $(' .explore-workshop-btn').css('visibility','hidden');
+	$(' .workshop').css('overflow','hidden');
+	
+	$(' .workshop-1').mouseenter(function(){
+		$(' .workshop-img-1').css('opacity','0.1');
+		$(' .explore-workshop-btn-1').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-1',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-1',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-1').mouseleave(function(){
+		$(' .workshop-img-1').css('opacity','1');
+		$(' .explore-workshop-btn-1').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-1',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
+	$(' .workshop-2').mouseenter(function(){
+		$(' .workshop-img-2').css('opacity','0.1');
+		$(' .explore-workshop-btn-2').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-2',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-2',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-2').mouseleave(function(){
+		$(' .workshop-img-2').css('opacity','1');
+		$(' .explore-workshop-btn-2').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-2',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
+
+	$(' .workshop-3').mouseenter(function(){
+		$(' .workshop-img-3').css('opacity','0.1');
+		$(' .explore-workshop-btn-3').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-3',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-3',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-3').mouseleave(function(){
+		$(' .workshop-img-3').css('opacity','1');
+		$(' .explore-workshop-btn-3').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-3',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
+
+	$(' .workshop-4').mouseenter(function(){
+		$(' .workshop-img-4').css('opacity','0.1');
+		$(' .explore-workshop-btn-4').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-4',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-4',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-4').mouseleave(function(){
+		$(' .workshop-img-4').css('opacity','1');
+		$(' .explore-workshop-btn-4').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-4',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
+
+	$(' .workshop-5').mouseenter(function(){
+		$(' .workshop-img-5').css('opacity','0.1');
+		$(' .explore-workshop-btn-5').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-5',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-5',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-5').mouseleave(function(){
+		$(' .workshop-img-5').css('opacity','1');
+		$(' .explore-workshop-btn-5').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-5',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
+
+	$(' .workshop-6').mouseenter(function(){
+		$(' .workshop-img-6').css('opacity','0.1');
+		$(' .explore-workshop-btn-6').css('visibility','visible');
+		gsap.timeline().fromTo(' .explore-workshop-btn-6',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
+		gsap.timeline().fromTo(' .workshop-img-6',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.4});
+
+	})
+	$(' .workshop-6').mouseleave(function(){
+		$(' .workshop-img-6').css('opacity','1');
+		$(' .explore-workshop-btn-6').css('visibility','hidden');
+		gsap.timeline().fromTo(' .workshop-img-6',{scaleY:2,scaleX:2,duration:1,opacity:0.8},{scaleY:1,scaleX:1,duration:1,opacity:1});
+	})
 
 	
-	// $(' .card-title').css('left','25%');
-	
-	
-
-
-
-
 	$(' .card-hover-2').mouseenter(function(){
 		$(' .card-img-top-2').css('opacity','0.4');
 		$(' .card-title-2').css('visibility','hidden');
 		$(' .explore-2').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-2',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-2',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-2',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-2').mouseleave(function(){
@@ -580,10 +681,7 @@
 		$(' .card-title-1').css('visibility','hidden');
 		$(' .explore-1').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-1',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-1',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-1',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-1').mouseleave(function(){
@@ -600,10 +698,7 @@
 		$(' .card-title-3').css('visibility','hidden');
 		$(' .explore-3').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-3',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-3',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-3',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-3').mouseleave(function(){
@@ -620,10 +715,7 @@
 		$(' .card-title-4').css('visibility','hidden');
 		$(' .explore-4').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-4',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-4',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-4',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-4').mouseleave(function(){
@@ -640,10 +732,7 @@
 		$(' .card-title-5').css('visibility','hidden');
 		$(' .explore-5').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-5',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-5',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-5',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-5').mouseleave(function(){
@@ -660,10 +749,7 @@
 		$(' .card-title-6').css('visibility','hidden');
 		$(' .explore-6').css('visibility','visible');
 		gsap.timeline().fromTo(' .explore-6',{y:0,duration:1,opacity:0},{y:0,duration:1,opacity:1});
-		
-
-		// $(' .card-info-1').css('visibility','visible');
-		 gsap.timeline().fromTo(' .card-img-top-6',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
+		gsap.timeline().fromTo(' .card-img-top-6',{scaleY:1,scaleX:1,duration:1,opacity:1},{scaleY:2,scaleX:2,duration:1,opacity:0.8});
 
 	})
 	$(' .card-hover-6').mouseleave(function(){
@@ -678,18 +764,6 @@
 	
 	
 </script>
-
-
-
-
-
-
- 
-
-
-
-
-
 </body>
 </html>
 
