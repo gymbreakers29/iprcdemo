@@ -58,3 +58,36 @@ var swiper = new Swiper('.faculty-swiper-container', {
       }
     }
   });
+
+  var swiper = new Swiper('.swiper-container-workshop', {
+    // slidesPerView: 3,
+     spaceBetween: 30,
+    // slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },initialSlide: 3,
+    breakpoints: {
+      // when window width is <= 320px
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup:1,
+        spaceBetweenSlides: 30
+      },
+      480: {
+        slidesPerView: 2,
+        slidesPerGroup:3,
+        spaceBetweenSlides: 30
+      },
+      // when window width is <= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetweenSlides: 30,
+        slidesPerGroup:3,
+        
+      }
+    }
+  });
