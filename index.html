@@ -231,27 +231,27 @@
 	
 	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-users" style="font-size: 3.2rem;color:white;"></i>
-		<p class="num h4" style="color: navy;">1258</p>
+		<p class="num1 counter h4" style="color: navy;">1258</p>
 		<p class="h5">Students Enrolled</p>
 		
 
 	</div>
 	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-trophy" style="font-size:3.2rem;color: white;"></i>
-		<p class="num h4" style="color: navy;">120</p>
+		<p class="num2 counter h4" style="color: navy;">120</p>
 		<p class="h5">Awards</p>
 
 	</div>
 	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-user" style="font-size: 3.2rem;color:white;"></i>
-		<p class="num h4" style="color: navy;">50</p>
+		<p class="num3 counter h4" style="color: navy;">50</p>
 		<p class="h5">Teachers</p>
 	
 
 	</div>
 	<div class="container col-lg-3 col-md-3 p-4">
 		<i class="fa fa-handshake" style="font-size: 3.2rem;color: white;"></i>
-		<p class="num h4" style="color: navy;">12</p>
+		<p class="num4 counter h4" style="color: navy;">12</p>
 		<p class="h5">Partner Organisations</p>
 	</div>
 	<div id="parallax" class="container-fluid p-0">
@@ -510,9 +510,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
+<script src="countup.min.js"></script>
 <script>
 
-	$('.num').counterUp({delay:10,time:3000})
+	jQuery(document).ready(function($){
+		$('.num1').counterUp({delay:10,time:3000,total:1258});
+		$('.num2').counterUp({delay:10,time:3000,total:120});
+		$('.num3').counterUp({delay:10,time:3000,total:50});
+		$('.num4').counterUp({delay:10,time:3000,total:12});
+	});
+	
 
 	gsap.timeline({
 		scrollTrigger:{
