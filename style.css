@@ -74,6 +74,20 @@ html{
   height: 100%;
 
 }
+
+#courses-bg{
+  background-image: url(./img/course-bg.jpg);
+
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
 #color-overlay-about-us{
   background: #108dc7;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #38e9ef, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -107,8 +121,8 @@ background: linear-gradient(to right, #38e9ef, #108dc7); /* W3C, IE 10+/ Edge, F
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
-  background-position: bottom;
-  opacity: 0.6;
+  background-position: top;
+  opacity: 0.2;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -202,6 +216,35 @@ width: 50%;
 
 }
 
+.swiper-container-workshop {
+  width: 100%;
+  height: 100%;
+}
+
+.workshop {
+  text-align: center;
+  font-size: 18px;
+  /* border: 2px solid rgba(187, 180, 180, 0.089); */
+  box-shadow: 5px 10px 18px 10px #363333;
+  border-radius: 5%;
+  background-size: contain;
+  background-image: url(https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 
 
 
@@ -231,9 +274,7 @@ width: 50%;
   width: 700px;
   margin-left: 0px;
 }
-#about-us-info{
-  margin-left: 50px;
-}
+
 
 #stats-option{
 width: 150px;

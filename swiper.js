@@ -61,7 +61,7 @@ var swiper = new Swiper('.faculty-swiper-container', {
 
   var swiper = new Swiper('.swiper-container-workshop', {
     // slidesPerView: 3,
-     spaceBetween: 30,
+     spaceBetween: 45,
     // slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
