@@ -63,6 +63,7 @@ var swiper = new Swiper('.faculty-swiper-container', {
     // slidesPerView: 3,
      spaceBetween: 45,
     // slidesPerGroup: 3,
+    // effect: 'coverflow',
     loop: true,
     loopFillGroupWithBlank: true,
     

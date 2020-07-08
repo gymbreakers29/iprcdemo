@@ -2,11 +2,13 @@
 body{
   background-color:#e5eaf5
 }
-.display-4{
-  color: #BE29EC;
-  font-weight: 400;
-  
+
+h1{
+  font-family: raleway;
+  font-weight: 500;
 }
+ 
+
 #card-info-course p{
   color: yellow;
 }
@@ -75,6 +77,42 @@ html{
 
 }
 
+.banner{
+  height: 100vh;
+  width: 100%;
+  background-image: url(./img/study.jpg);
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+padding: 0;
+color: black;
+
+}
+
+.banner .info{
+  margin-top: 10%;
+  transform: translateY(-10%);
+  
+}
+
+
+
+.banner .info a:hover{
+  text-decoration: none;
+}
+
+
+
+.banner .info p{
+font-size: 2em;
+letter-spacing: 0.5px;
+font-weight: 400;
+
+}
+
+
+
 #courses-bg{
   background-image: url(./img/course-bg.jpg);
 
@@ -83,6 +121,16 @@ html{
   background-size: cover;
   position: absolute;
   opacity: 0.5;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+
+}
+#color-overlay-banner{
+  background: black;  /* fallback for old browsers */
+
+  position: absolute;
+  opacity: 0.3;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -116,13 +164,13 @@ background: linear-gradient(to right, #38e9ef, #108dc7); /* W3C, IE 10+/ Edge, F
 }
 
 #contact-bg{
-  background-image: url(./img/contact-us.jpg);
-
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #E6DADA;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #274046, #E5EAF5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   position: absolute;
-  background-position: top;
-  opacity: 0.2;
+  background-position: center;
+  opacity: 0.8;
   z-index: 0;
   width: 100%;
   height: 100%;
@@ -323,6 +371,9 @@ margin-left: 20px;
     #statistics{
       height: auto;
     }
+    .mobile-swipper{
+      height: 200px;
+    }
   }
 @media (min-width: 768px) {
 #card-info-course{
@@ -334,6 +385,10 @@ margin-left: 20px;
   #statistics{
     height: 300px;
   }
+  .mobile-swipper{
+    height: 360px;
+  }
+
   
 }
 @media (min-width: 868px) {
@@ -345,6 +400,9 @@ margin-left: 20px;
   }
   #statistics{
     height: 300px;
+  }
+  .mobile-swipper{
+    height: 360px;
   }
   
 }
@@ -435,8 +493,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
   text-align: center;
   font-size: 18px;
   /* border: 2px solid rgba(187, 180, 180, 0.089); */
-  box-shadow: 5px 10px 18px 10px #363333;
+  box-shadow: 0px 5px 5px 0px #363333;
   border-radius: 5%;
+  border: 1px solid lightgray;
   /* background-size: contain; */
   /* background-image: url(https://virtuser.com/wp-content/uploads/2018/09/Workshop-MVNO-Virtuser.png); */
 
