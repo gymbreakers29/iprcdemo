@@ -296,6 +296,34 @@ width: 50%;
 
 
 
+.photo-container{
+  height: auto;  
+  padding: 1em;
+    column-count: 4;
+}
+
+.photo-container img{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+@media(max-width: 800px){
+    .photo-container{
+        column-count: 3;
+    }
+}
+
+@media(max-width: 600px){
+    .photo-container{
+        column-count: 2;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        column-count: 1;
+    }
+}
 
 /*---Media Queries --*/
 
