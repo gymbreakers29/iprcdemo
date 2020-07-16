@@ -52,7 +52,7 @@ var swiper = new Swiper('.faculty-swiper-container', {
         spaceBetweenSlides: 0
       },
       // when window width is <= 640px
-      640: {
+      800: {
         slidesPerView: 6,
         spaceBetweenSlides: 0
       }

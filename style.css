@@ -4,8 +4,8 @@ body{
 }
 
 h1{
-  font-family: raleway;
-  font-weight: 500;
+  font-family: bebas neue;
+  font-weight: 400;
 }
  
 
@@ -24,7 +24,7 @@ h1{
 
 .navbar {
   min-height: 60px;
-  background-color: #002448;
+  background-color: #020202;
 }
 html{
   overflow-x: hidden;
@@ -126,7 +126,7 @@ font-weight: 400;
   height: 100%;
 
 }
-#color-overlay-banner{
+/* #color-overlay-banner{
   background: black;
 
   position: absolute;
@@ -135,7 +135,7 @@ font-weight: 400;
   width: 100%;
   height: 100vh;
 
-}
+} */
 #color-overlay-about-us{
   background: #108dc7;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #38e9ef, #108dc7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -166,7 +166,7 @@ background: linear-gradient(to right, #38e9ef, #108dc7); /* W3C, IE 10+/ Edge, F
 #contact-bg{
   background: #E6DADA;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #274046, #E6DADA);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #274046, #E5EAF5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, teal, #E5EAF5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   position: absolute;
   background-position: center;
@@ -198,8 +198,7 @@ background: linear-gradient(to right, #38e9ef, #108dc7); /* W3C, IE 10+/ Edge, F
 }
 
 #partner-org-bg{
-
-background-color: aqua;
+  background: linear-gradient(to bottom,#ACB8CD, aqua);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -227,7 +226,7 @@ p{
 }
 footer{
   margin-top: -24px;
-  background-color: #002448;
+  background-color: #020202;
   color: #E5B964;
 }
 
@@ -293,7 +292,13 @@ width: 50%;
   align-items: center;
 }
 
+#Help a:hover{
+  color: orange;
+}
 
+#Help a{
+  color: navy;
+}
 
 
 .photo-container{
