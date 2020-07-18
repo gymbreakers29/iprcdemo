@@ -80,19 +80,21 @@ html{
 .banner{
   height: 100vh;
   width: 100%;
-  background-image: url(./img/study.jpg);
+  position: relative;
+  /* background-image: url(./img/study.jpg); */
 background-position: center;
 background-size: cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
 padding: 0;
-color: black;
+color: white;
 
 }
 
 .banner .info{
   margin-top: 10%;
   transform: translateY(-10%);
+  color: white;
   
 }
 
@@ -563,4 +565,82 @@ Extra (xl) large devices (large desktops, 1200px and up)
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+section{
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+
+}
+.rocket{
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  font-size: 8em;
+  border-radius: 50%;
+  animation:fuel 4s linear infinite;
+  box-shadow: inset 0 0 55px rgba(150, 209, 13, 0.753);
+}
+.rocket:before{
+  content: "";
+  position: absolute;
+  top:90px;
+  left:20px;
+  width: 30%;
+  height: 60%;
+  background: #ff0;
+  border-radius: 50%;
+  filter: blur(15px);
+  transform: rotate(45deg);
+  z-index: -1;
+  animation:fuel-rocket 4s linear infinite;
+}
+@keyframes fuel-rocket{
+  0%{
+      background: #00abff;
+      transform: rotate(45deg) scaleY(1);
+  }
+  25%{
+      background: #ffff90;
+  }
+  50%{
+      background: #f100ff;
+      transform: rotate(45deg) scaleY(2);
+  }
+  75%{
+      background: #00dbff;
+  }
+  100%{
+      background: #00abff;
+      transform: rotate(45deg) scaleY(1);
+  }
+
+}
+
+@keyframes fuel {
+  0%{
+      transform:translate(-20px,-20px);
+  }
+  25%{
+      transform:translate(20px,0px);
+  }
+  50%{
+      transform:translate(-20px,20px);
+  }
+  75%{
+      transform:translate(20px,0px);
+  }
+  100%{
+      transform:translate(-20px,-20px);
+  }
+  
+}
+.rocket .fa{
+  color: white;
 }
