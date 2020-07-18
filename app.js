@@ -23,7 +23,8 @@ particlesJS('particles-js',
         }
       },
       "color": {
-        "value": ["#eb4634","#cf7757","#4f72c2","#4f72c2","#54cc6c","#54cc6c"]
+        "value":"#fff"
+        // "value": ["#eb4634","#cf7757","#4f72c2","#4f72c2","#54cc6c","#54cc6c"]
       },
       "shape": {
         "type": "star",
