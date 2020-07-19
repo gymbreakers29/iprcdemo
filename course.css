@@ -1,0 +1,77 @@
+
+html{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background: #360033;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0b8793, #360033);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #0b8793, #360033); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+   
+}
+h1{
+    color: wheat
+}
+#main-list
+{
+    color: wheat;
+}
+
+#main-list ul{
+    color: white;
+    font-size: large;
+    
+}
+
+#explore-container{
+    width: 100%;
+    height: auto;
+}
+
+#form-container{
+    background-color: rgba(255, 255,255 , 0.8);
+    box-shadow: 10px 10px 29px 7px rgba(125,124,125,1);}
+
+#explore-bg{
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+   
+    z-index: 0;
+    width: 100%;
+   
+    
+  
+  }
+
+  .no-padding{
+      padding: 0;
+  }
+
+  #main-list ul{
+      padding-bottom: 20px;
+  }
+
+  @media (max-width: 576px) {
+ul{
+    padding-left: 20px;
+}  
+}
+
+@media (min-width: 992px) { 
+    body{
+        height: 100vh;
+    }
+}
+
