@@ -1,14 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 body{
-  background-color:#e5eaf5
+  background-color:#e5eaf5;
+  overflow-x: hidden;
 }
 
 h1{
   font-family: bebas neue;
   font-weight: 400;
 }
- 
 
+#main-text span{
+  opacity: 0;
+  display: inline-block;
+  animation:  animate 1s linear forwards;
+
+}#main-text{
+  font-size: 7em;
+}
+#main-text-video{
+  width: 15%;
+  height: 20vh;
+  transform: scale(1.5);
+
+}
+#color-blend:before{
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #f00,#f00,#0f0,#0ff,#0ff);
+  mix-blend:color;
+  pointer-events: none;
+
+}
+@keyframes animate
+{
+  0%
+  {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+  }
+  100%
+  {
+    opacity: 1;
+    transform: rotateY(0deg);
+    filter: blur(0px);
+    
+  }
+}
+#main-text span:nth-child(1){
+  animation-delay: 1s;
+}
+#main-text span:nth-child(2){
+  animation-delay: 2s;
+}
+#main-text span:nth-child(3){
+  animation-delay: 3s;
+}
+#main-text span:nth-child(4){
+  animation-delay: 4s;
+}
+.overlay-main-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
 #card-info-course p{
   color: yellow;
 }
@@ -470,6 +536,12 @@ margin-left: 20px;
   font-weight: 400;
   
   }
+#main-text-video{
+  width: 80%;
+  height: 10vh;
+  transform: scale(3.5);
+ 
+}
 
 
 
