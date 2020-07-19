@@ -53,8 +53,9 @@
 </style>
 <body>
 
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-circle-up" style="color: rgb(23, 218, 110);font-size: 3rem; " aria-hidden="true"></i></button>
 <!-- Navigation -->
-<nav class="navbar sticky-top navbar-expand-lg " >
+<nav class="navbar fixed-top navbar-expand-lg " >
 	<!-- Brand -->
 	<a class="navbar-brand" href="#"><img height="35px" width="35px" src="/Bootstrap 4 Site Files/img/mac.png" alt=""></a>
   
@@ -73,19 +74,25 @@
 		  <a class="nav-link" href="#">Home</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" href="#">About Us</a>
+		  <a class="nav-link" href="#about-us">About Us</a>
 		</li>
 		<li class="nav-item">
-		  <a class="nav-link" href="#">Courses</a>
+		  <a class="nav-link" href="#courses">Courses</a>
 		</li>
 		<li class="nav-item">
-			<a class="nav-link" href="#">Partner Organization</a>
+			<a class="nav-link" href="#Partner-Organizations">Partner Organization</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#">Advisors</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link" href="#">Faculty</a>
+			<a class="nav-link" href="#faculty-bg">Faculty</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#Help">Join Us</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#contact-us">Contact Us</a>
 		  </li>
 	  </ul>
 	</div>
@@ -245,7 +252,7 @@
 <hr>
 
 
-<div class="container-fluid row justify-content-center text-center mb-5">
+<div id="workshop-page" class="container-fluid row justify-content-center text-center mb-5">
 	<h1 class="display-4 text-center py-3 col-lg-12" style="color: navy;">Workshops</h1> 
 		<div class="container col-lg-12 row mt-2 px-5 justify-content-between mobile-swipper" style=" width: 100%;">
 		<div class="swiper-container swiper-container-workshop col-lg-10 d-flex py-2">
@@ -585,7 +592,7 @@
    <hr style="margin: 11px;">
 	
 
-<footer >
+<footer id="contact-us" >
 	<div class="container-fluid padding p-4">
 		<div class="row text-center">
 			<div class="col-md-4">
@@ -907,6 +914,24 @@
 
 
 	})
+	var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		mybutton.style.display = "block";
+	} else {
+		mybutton.style.display = "none";
+	}
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	document.body.scrollTop = 0;
+	document.documentElement.scrollTop = 0;
+}
 	
 	
 </script>
